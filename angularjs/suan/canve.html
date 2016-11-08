@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
+	<title>Document</title>
+	<link rel="stylesheet" href="css/one.css">
+</head>
+<body>
+	<div id="page">
+	   <section class="ding">
+
+		   	<div class="pic">
+				<img src="img/map.jpg" alt="" class="map">
+
+			</div>
+				<img src="img/dire_03.png" alt="" class="two map_two1">
+				<img src="img/dire_07.png" alt="" class="one map_two2">
+				<img src="img/dire_11.png" alt="" class="one map_two3">
+				<img src="img/dire_15.png" alt="" class="two map_two4">
+				<img src="img/dire_18.png" alt="" class="two map_two5">
+				<canvas id="can" width="400px" height="400px"></canvas>
+	   </section>
+		
+		
+		<footer class="footer">
+			<img src="img/return.jpg" alt="" class="return">
+			<img src="img/ren.jpg" alt="">
+		</footer>
+	</div>
+</body>
+</html>
+<script>
+	var can=document.getElementById("can"),
+		cxt=can.getContext("2d");
+		cxt.closePath();
+var way=[{
+	moveX:26,
+	moveY:60,
+	toX:60,
+	toY:0
+	 },
+	 {
+	moveX:86,
+	moveY:60,
+	toX:0,
+	toY:164
+	 },
+	 {
+	moveX:86,
+	moveY:239,
+	toX:24,
+	toY:0
+	 },
+	 {
+	moveX:110,
+	moveY:239,
+	toX:0,
+	toY:-39
+	 }]
+	
+
+	cxt.strokeStyle='red';
+	cxt.lineWidth=2;
+	var i=0;
+	function move(arr,num){
+		cxt.beginPath();
+		cxt.moveTo(arr[num].moveX,arr[num].moveY);
+	   var timer2=setTimeout(function(){
+	   		num++;
+	   		if(num>=arr.length){
+	   		 clearTimeout(timer2);
+	   		 return false
+	   		}
+ 			move(arr,num);
+ 		},1002)
+		var timer=setInterval(function(){
+			i++;
+			if(i>=10){
+				clearInterval(timer);
+			}
+			if(arr[num].toX){
+				cxt.lineTo(arr[num].moveX+arr[num].toX/10*i,arr[num].moveY);
+		  	}else{
+				cxt.lineTo(arr[num].moveX,arr[num].moveY+arr[num].toY/10*i);
+				
+			}
+		 	cxt.stroke();
+		},100)
+		
+ 	}
+ 	cxt.closePath()
+	move(way,0)
+
+
+	/*function move2(arr,0){
+		cxt.beginPath();
+		
+		cxt.moveTo(arr[1].moveX,arr[1].moveY);
+		var timer=setInterval(function(){
+			i++;
+			if(i>=10){
+				clearInterval(timer);
+			}
+		  cxt.lineTo(arr[1].moveX,arr[1].moveY+arr[1].toY/10*i);
+		 cxt.stroke();
+		},100)
+ 	}
+ 	setTimeout(function(){
+ 		move2(way,1)
+ 	},1002)*/
+</script>

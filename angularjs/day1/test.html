@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myapp'>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.active{
+			color: yellow;
+		}
+	</style>
+</head>
+<body ng-controller='main'>
+	<ul>
+		<li ng-repeat='i in data'>
+			{{i}}
+		</li>
+	</ul>
+	<button ng-click="add()">按钮</button>
+	姓名<input type="text" ng-model="name">
+	年龄<input type="text" ng-model="age"><br>
+	<hr>
+	<button ng-click="getParent()">广播</button>
+	<div class="test" ng-controller="test">
+		{{msg}}
+	</div>
+	 <p class="list" ng-controller="list">
+		{{msg}}
+	</p> 
+
+	<h3 creat-dom>
+		命令 自定义
+	</h3>
+	<creat-dom></creat-dom>
+</body>
+</html>
+<script src="js/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/directive.js"></script>

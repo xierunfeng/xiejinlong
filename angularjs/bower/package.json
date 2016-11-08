@@ -1,0 +1,37 @@
+{
+  "name": "bower",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "bower": "^1.7.9",
+    "gulp-connect": "^5.0.0",
+    "oclazyload": "^1.0.9",
+    "gulp-respond": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies":{
+    "gulp":"*",
+    "gulp-respond":"*",
+    "gulp-connect":"*",
+    "gulp-concat":"*",
+     "gulp-uglify":"*",
+     "gulp-ng-annotate":"*",
+     "gulp-ngmin":"*",
+     "gulp-minify-css":"*",
+     "gulp-minify-html":"*",
+     "gulp-rename":"*",
+     "gulp-clean":"*",
+     "gulp-rev":"*",
+     "gulp-rev-collector":"*"
+
+  }
+}

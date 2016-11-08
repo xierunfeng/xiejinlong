@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+html,body,#page{
+	width: 100%;
+	height: 100%;
+}
+#page{
+	display: -webkit-flex;
+	flex-direction: column;
+	padding: 10px;
+}
+.pic{
+	height: 80%;
+
+}
+.pic img{
+	width: 100%;
+	height: 100%;
+}
+.footer{
+	height: 20%;
+}
+.return{
+	width: 43px;
+	height: 43px;
+}
+
+.one{
+	width: 13%;
+	height: 10%;
+	
+}
+.two{
+	width: 10%;
+	height:13%;
+	
+}
+.ding{
+	position: relative;
+
+}
+.one{
+	position: absolute;
+	left: 0;
+	
+}
+.map_two2{
+	top:11%;
+}
+.map_two3{
+	top:62%;
+}
+
+.map_two1{
+	position: absolute;
+	top:0;
+	right:-2%;
+}
+.map_two4{
+	position: absolute;
+	bottom:13%;
+	right:-1%;
+}
+ /* .five{
+ 	position: absolute;
+ 	bottom:13%;
+ 	right:10%;
+ }   */
+
+ #can{
+	position: absolute;
+	left: 0;
+	top:0;
+ }

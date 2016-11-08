@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>money</title>
+
+</head>
+<body>
+	<div ng-app='myapp' ng-controller='show'>
+		<select ng-model="selectedName" ng-options='i for i in names' >
+			
+		</select>
+	</div>
+</body>
+</html>
+<script src="js/angular.min.js"></script>
+<script>
+	var myapp=angular.module('myapp',[])
+	myapp.controller('show',function($scope){
+		$scope.names=["Google", "Runoob", "Taobao"];
+	})
+</script>
+
+	

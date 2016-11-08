@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+	var arr2=[1,2,3,4,5]
+
+	/*function arrs(arr,a,b){
+		arr[a]=arr[b]-arr[a]
+		arr[b]=arr[b]-arr[a]
+		arr[a]=arr[b]+arr[a]
+		return arr;
+	}
+	console.log(arrs(arr2,0,4));*/
+
+	/*function arrs(arr,a,b){
+		arr[b]=[arr[a],arr[a]=arr[b]][0]
+		return arr;
+	}
+
+	console.log(arrs(arr2,0,4));*/
+
+	function arrs(arr,a,b){
+		arr[a]=[arr.splice(4,0,0)][0]
+		return arr;
+	}
+
+	console.log(arrs(arr2,0,4));
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body ng-controller="con1">
+	
+</body>
+</html>
+<script src="js/angular.min.js"></script>
+<script>
+
+	var app=angular.module("myapp",[]);
+	app.controller("con1",function($scope,$http){
+		//$http.post();
+		$http.get("a.php",{a:6,b:6})
+			.success(function(e){
+				console.log(e);
+		})
+	})
+</script>
