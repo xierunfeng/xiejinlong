@@ -1,0 +1,120 @@
+@import url("all.css");
+* {
+  box-sizing: border-box; }
+
+html, body, #page {
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 625%; }
+
+body {
+  font-size: .16rem; }
+
+.pic {
+  padding: 0 .16rem; }
+  .pic img {
+    width: 100%; }
+  .pic h3 {
+    margin-bottom: .2rem; }
+    .pic h3 span {
+      color: blue; }
+  .pic dd {
+    width: 100%; }
+  .pic ul {
+    display: -webkit-flex;
+    margin-top: .06rem;
+    padding: 0 .16rem; }
+    .pic ul li {
+      -webkit-flex: 1;
+      height: .62rem;
+      background: #bbbbbb;
+      margin-right: .02rem;
+      padding: .05rem; }
+      .pic ul li img {
+        width: 100%;
+        height: 100%; }
+  .pic h2 {
+    padding-left: .05rem;
+    height: .17rem;
+    border-left: .06rem solid blue; }
+
+.two {
+  margin-bottom: .16rem; }
+
+.text {
+  padding: 0 .1rem;
+  width: 100%; }
+
+.list {
+  font-size: .12rem;
+  margin-top: .36rem; }
+  .list ol li {
+    line-height: .24rem;
+    color: #404752; }
+
+.first {
+  line-height: .68rem;
+  border-bottom: 1px solid #666; }
+  .first h2 {
+    font-size: .2rem; }
+  .first p {
+    font-size: .18rem;
+    color: #666; }
+
+.two {
+  border-bottom: 1px solid #666; }
+  .two li {
+    margin-top: .1rem; }
+  .two a {
+    padding: .1rem;
+    display: inline-block;
+    background: #1ba1e2;
+    color: #fff;
+    font-size: .12rem;
+    border-radius: .05rem; }
+  .two .last {
+    margin-bottom: .1rem; }
+
+.footer {
+  height: 2.6rem;
+  background: blue;
+  padding-top: .8rem;
+  text-align: center; }
+  .footer ul li {
+    display: -webkit-flex;
+    line-height: .36rem;
+    text-align: center; }
+    .footer ul li a {
+      -webkit-flex: 1; }
+
+.tet {
+  width: 1rem;
+  height: .28rem; }
+
+.but {
+  font-size: .12rem;
+  height: .28rem;
+  line-height: .28rem;
+  background: #3e4645;
+  color: #a2a5a5; }
+
+.footer-two a {
+  font-size: .12rem;
+  color: #a2a5a5; }
+
+.footer-first a {
+  font-size: .14rem;
+  color: #fff; }
+
+@media screen and (min-width: 900px) {
+  .pic {
+    width: 45%;
+    float: left; }
+
+  .text {
+    width: 55%;
+    float: left; } }
+
+/*# sourceMappingURL=one.css.map */

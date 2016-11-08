@@ -1,0 +1,64 @@
+*{
+	margin:0;
+	padding:0;
+}
+*,*:before,*:after{
+	box-sizing:border-box;
+}
+body{
+	/*使用无衬线字体*/
+	font-size: 16px;
+	font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+	color:#000000;
+}
+li{
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:16px;
+}
+input,select,textarea{
+	vertical-align:middle;
+}
+img{
+	border:none;
+	vertical-align:middle;
+}
+a{
+	text-decoration:none;
+	color:#333333;
+}
+a,img{
+	/*禁止长按链接与图片弹出菜单*/
+	-webkit-touch-callout:none;
+}
+html,body{
+	/*禁止选中文本*/
+	-webkit-user-select:none;
+	user-select:none;
+}
+button,input,optgroup,select,textarea{
+	/*去掉webkit默认的表单样式*/
+	-webkit-appearance:none;
+	/*解决更改表单元素样式时，可能会导致在手机端表单元素无法正常使用的兼容问题*/
+}
+a,button,input,optgroup,select,textarea{
+	/*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input::-webkit-input-placeholder{
+	/*修改webkit中input的placeholder样式*/
+	color:#ccc;
+}
+input:focus::-webkit-input-placeholder{
+	/*修改webkit中focus状态下input的placeholder样式*/
+	color:#f00;
+}
+body{
+	/*禁止IOS调整字体大小*/
+	-webkit-text-size-adjust:100%!important;
+}
+input::-webkit-input-speech-button{
+	/*隐藏Android的语音输入按钮*/
+	display:none;
+}

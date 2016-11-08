@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <title>Bootstrap 实例</title>
+	 <meta charset="utf-8">
+	 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 包含头部信息用于适应不同设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 包含 bootstrap 样式表 -->
+	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/one.css">
+</head>
+<body>
+<div id="page">
+	<nav class="navbar navbar-default" role="navigation"  >
+	    <div class="container-fluid" style="background: #eee">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse"
+	                data-target="#example-navbar-collapse">
+	            <span class="sr-only">切换导航</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="#" style="">LOGO</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+	        <ul class="nav navbar-nav">
+	            <li class="active"><a href="#">HOME</a></li>
+	            
+	            <li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    FURNITVRE <b class="caret"></b>
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">jmeter</a></li>
+	                    <li><a href="#">EJB</a></li>
+	                    <li><a href="#">Jasper Report</a></li>
+	                    <li class="divider"></li>
+	                    <li><a href="#">分离的链接</a></li>
+	                    <li class="divider"></li>
+	                    <li><a href="#">另一个分离的链接</a></li>
+	                </ul>
+	            </li>
+	            <li class="active"><a href="#">BLOG</a></li>
+	            <li class="active"><a href="#">THEME</a></li>
+	            <li class="active"><a href="#">ABOUT US</a></li>
+	            <li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                    ENGLISH <b class="caret"></b>
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">jmeter</a></li>
+	                    <li><a href="#">EJB</a></li>
+	                    <li><a href="#">Jasper Report</a></li>
+	                    <li class="divider"></li>
+	                    <li><a href="#">分离的链接</a></li>
+	                    <li class="divider"></li>
+	                    <li><a href="#">另一个分离的链接</a></li>
+	                </ul>
+	            </li>
+	            <li class="dropdown">
+	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	                   <img src="img/qi.png" alt="" style="width: 22px;height: 15px;"> USD <b class="caret"></b>
+	                </a>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">jmeter</a></li>
+	                    <li><a href="#">EJB</a></li>
+	                    <li><a href="#">Jasper Report</a></li>
+	                    <li class="divider"></li>
+	                    <li><a href="#">分离的链接</a></li>
+	                    <li class="divider"></li>
+	                    <li><a href="#">另一个分离的链接</a></li>
+	                </ul>
+	            </li>
+	        </ul>
+	    </div>
+	    </div>
+	</nav>
+	<div id="content">
+		
+		   <section class="pic">
+		      <h3><span>Home/collections/</span>Prodult</h3>
+				<dl><dt><img src="img/img1.gif" alt=""></dt>
+					<dd>
+						
+						<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>   
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+                        <ul>
+                            <li><img src="img/small1.gif" alt=""></li>
+                            <li><img src="img/small2.gif" alt=""></li>
+                            <li><img src="img/small3.gif" alt=""></li>
+                            <li><img src="img/small4.gif" alt=""></li>
+                            <li><img src="img/img4.png" alt=""></li>
+                            <li><img src="img/small1.gif" alt=""></li>
+                            <li><img src="img/small1.gif" alt=""></li>
+                           
+                        </ul>
+        </div>
+        <div class="item">
+           
+                        <ul>
+                            <li><img src="img/small1.gif" alt=""></li>
+                            <li><img src="img/small2.gif" alt=""></li>
+                            <li><img src="img/small3.gif" alt=""></li>
+                            <li><img src="img/small4.gif" alt=""></li>
+                            <li><img src="img/img4.png" alt=""></li>
+                            <li><img src="img/small1.gif" alt=""></li>
+                            <li><img src="img/small1.gif" alt=""></li>
+                            
+                        </ul>
+        </div>
+        <div class="item">
+            
+                        <ul>
+                            <li><img src="img/small1.gif" alt=""></li>
+                            <li><img src="img/small2.gif" alt=""></li>
+                            <li><img src="img/small3.gif" alt=""></li>
+                            <li><img src="img/small4.gif" alt=""></li>
+                            <li><img src="img/img4.png" alt=""></li>
+                            <li><img src="img/small1.gif" alt=""></li>
+                            <li><img src="img/small1.gif" alt=""></li>
+                           
+                        </ul>
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel" 
+        data-slide="prev">&lsaquo;
+    </a>
+    <a class="carousel-control right" href="#myCarousel" 
+        data-slide="next">&rsaquo;
+    </a>
+</div>
+					</dd>
+				</dl>
+				<h2> Detailed Photos</h2>
+				<img src="img/img2.gif" alt="" class="two">
+				<img src="img/img3.gif" alt="">
+		   </section>
+			<section class="text">
+				<ul>
+					<li class="first"><h2>Soft Merino Interfacesrts/3year</h2>
+					<p>USD$599.00</p>
+					</li>
+					<li class="list two">
+						<ol>
+							<li>Bye At:</li>
+							<li><a href="#">Amazon US</a></li>
+							<li>
+								<a href="#">ebay</a>
+								<a href="#">LightintheBox</a>
+								<a href="#">Tmall</a>
+								<a href="#">Tmall</a>
+								<a href="#">LightintheBox</a>
+							</li>
+							<li class="last"><a href="#" >Send Order Request</a></li>
+						</ol>
+					</li>
+					<li class="list three">
+						<ol>
+							<li class="three-one">Share:<img src="img/xiao.png"></li>
+							<li class="three-two"><h2>Description</h2></li>
+							<li>
+								keyFeatures
+							</li>
+							<li>-Quad Core Pentium Js2900 2.41GHz Processor</li>
+							<li>-Quad Core Pentium Processor</li>
+							<li>-Quad Core Pentium Js2900 2.41GHz </li>
+							<li>-Quad  Js2900 2.41GHz Processor</li>
+						</ol>
+					</li>
+					<li class="list">
+						<ol>
+							<li>Full Speccifiation</li>
+							<li>
+								-Processor-intel Quad Core PentiumJs2900 2.41GHZ Processor
+							</li>
+
+							<li>
+								-Processor-intel Quad Core PentiumJs2900 2.41GHZ Processor
+							</li>
+
+							<li>
+								-Processor-intel Quad Core PentiumJs2
+							</li>
+
+							<li>
+								-Processor-intel Quad Core 
+							</li>
+
+							<li>
+								-Processor-intel Quad Core PentiumJs2900 2.41GHZ Processor
+							</li>
+
+							<li>
+								-Processor-intel Quad Core PentiumJs2900 2.41GHZ Processor
+							</li>
+
+							<li>
+								-Processor-intel Quad Core PentiumJs2900 2.41GHZ Processor
+							</li>
+
+							<li>
+								-Processor-intel Quad Core PentiumJs2
+							</li>
+						</ol>
+					</li>
+					<li class="list">
+						<ol>
+							<li>Dimensions</li>
+							<li>-Height:386mm</li>
+							<li>_Width:160mmm</li>
+							<li>
+								-Depth:425mm
+							</li>
+						</ol>
+					</li>
+					<li class="list">
+						<ol>
+							<li>Interfaces</li>
+							<li>-1XD-Sub VGA Port</li>
+							<li>_Width:160mmm</li>
+							<li>
+								-Depth:425mm
+							</li>
+						</ol>
+					</li>
+					<li class="list">
+						<ol>
+							<li>Expansion</li>
+							<li>-1xPCloex16Slot</li>
+							<li>-2xPCloex16Slot</li>
+						</ol>
+					</li>
+					<li class="list">
+						<ol>
+							<li>Case-mATX Tower Case</li>
+							<li>Warranty -3 YearLimited to base Warranty(1 year parts/3yearslabour)</li>
+						</ol>
+					</li>
+					<li class="list">
+						<ol>
+							<li>Dimensions</li>
+							<li>-Height:386mm</li>
+							<li>_Width:160mmm</li>
+							<li>
+								-Depth:425mm
+							</li>
+						</ol>
+					</li>
+					<li class="list">
+						<ol>
+							<li>Interfaces</li>
+							<li>-1xPCloex16Slot</li>
+							<li>-2xPCloex16Slot</li>
+						</ol>
+					</li>
+					<li class="list">
+						<ol>
+							<li>Expansion</li>
+							<li>-1xPCloex16Slot</li>
+							<li>-2xPCloex16Slot</li>
+						</ol>
+					</li>
+					<li class="list">
+						<ol>
+							<li>Case-mATX Tower Case</li>
+							<li>Warraanty-3yearslabour(1 year parts/3yearslabour)</li>
+							
+						</ol>
+					</li>
+				</ul>
+			</section>
+		 
+	</div>
+	
+	
+	<!-- <footer class="footer">
+			<ul>
+				<li class="footer-first"><a href="#">Quike Links</a><a href="#">Monitoring US</a><a href="#">ContactUs</a><a href="#">Newsteter</a></li>
+				<li class="footer-two">
+					<a href="#">Catalog</a>
+					<a href="#">Catalog</a>
+					<a href="#">Twiter</a>
+					<span><input type="text" class="tet" placeholder="enter your adress"> <button class="but">SUBSCUBR</button></span>
+				</li>
+				<li class="footer-two">
+					<a href="#">Catalog</a>
+					<a href="#">Catalog</a>
+					<a href="#">Twiter</a>
+					
+				</li>
+			</ul>
+			<p><span>c</span>Copyright2016California</p>
+	 </footer> -->
+	
+</div>
+
+
+
+</body>
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Carousel.js"></script>
+
